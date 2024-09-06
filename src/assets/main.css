@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section#hero {
+  height: 50vh;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#hero h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+  color: #c61f1f;
+  padding-bottom: 2rem;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search button {
+  cursor: default;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #c61f1f;
+  border-right: none;
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.searchTerm:focus {
+  color: #202020;
+}
+
+.searchTerm::placeholder {
+  color: #202020;
+}
+
+.searchButton {
+  width: 40px;
+  height: 46px;
+  border: 1px solid #c61f1f;
+  background: #c61f1f;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.searchButton svg {
+  height: fit-content;
+  margin: auto;
+}
+
+.hero-wrap {
+  width: fit-content;
+  margin: auto;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+}
+
+.wrap select {
+  margin-left: 1rem;
+  background-color: #c61f1f;
+  color: #fff;
+  outline: none;
+  border: 1px solid #c61f1f;
+  border-radius: 5px;
+}
+
+.wrap select:hover {
+  background-color: #ab1b1b;
+  border: 1px solid #ab1b1b;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+div .loading {
+  width: fit-content;
+  margin: auto;
+}
+
+.places-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.place-box {
+  background-color: #202020;
+  font-family: 'SUSE', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.place-box:hover {
+  background-color: #2b2b2b;
+  transition: 0.1s;
+}
+
+.map {
+  margin-bottom: 5rem;
+}
+
+.place-info {
+  background-color: #202020;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place-detail {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+#detail {
+  font-family: 'SUSE', sans-serif;
+}
+
+.text-box {
+  width: 100%;
+}
+
+.text-box h3 {
+  color: #c61f1f;
+}
+
+.text-box hr {
+  border-color: #c61f1f;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  width: 4%;
+}
+
+div.home-flex {
+  background-color: #202020 !important;
+  display: flex;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+h3.home {
+  background-color: #202020 !important;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  width: 5rem;
+}
+
+h3.home:hover {
+  color: #c61f1f;
+  fill: #c61f1f;
+  transition: 0.1s;
+}
+
+h3.home span svg {
+  fill: #fff;
+  width: 1rem;
+}
+
+h3.home:hover > span svg {
+  fill: #c61f1f;
+  transition: 0.1s;
+}
+
+@media only screen and (max-width: 500px) {
+  section#hero h1 {
+    font-size: 50px;
+  }
+
+  .text-box h2 {
+    font-size: 20px;
+  }
+
+  .arrow {
+    width: 10%;
+  }
+}
